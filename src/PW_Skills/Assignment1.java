@@ -12,6 +12,8 @@ public class Assignment1 {
         Q3Answer();
         System.out.println("\nAnswer 4 ==>");
         Q4Answer();
+        System.out.println("\nAnswer 5 ==>");
+        Q5Answer();
     }
 
     //    Q1 - Take 2 integer values in two variables x and y and print their product.
@@ -36,10 +38,24 @@ public class Assignment1 {
         int area = length * breadth;
         System.out.println("Area of Rectangle " + area);
     }
-//    Q4 - Write a Java program to calculate the cube of a number.
-    static void Q4Answer(){
+
+    //    Q4 - Write a Java program to calculate the cube of a number.
+    static void Q4Answer() {
         int num = 3;
-        int cube = num*num*num;
-        System.out.println("Cube of "+num+" = "+cube);
+        int cube = num * num * num;
+        System.out.println("Cube of " + num + " = " + cube);
+    }
+
+    //    Q5 - Write a Java program to swap two numbers with the help of a third variable.
+    static void Q5Answer() {
+        int x = 5;
+        int y = 10;
+        System.out.println("Value of x before swap " + x);
+        System.out.println("Value of y before swap " + y);
+        int temp = x;
+        x = y;
+        y = temp;
+        System.out.println("Value of x After swap " + x);
+        System.out.println("Value of y After swap " + y);
     }
 }
