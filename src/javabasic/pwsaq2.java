@@ -1,5 +1,5 @@
-package javabasic;// Find the total number of bits needed to be flipped to convert x to y.
-
+package javabasic;
+// Find the total number of bits needed to be flipped to convert x to y.
 // //The idea is to take XOR of the given two integers. After calculating the XOR, the problem will reduce to
 // counting set bits in the XOR output using Brian Kernighan algorithm.
 

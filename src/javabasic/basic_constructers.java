@@ -4,20 +4,18 @@ import java.util.*;
 
 class algebra {
 
-    // variable with scope of this class
-    // it can be use in any method or other purpose in this class only
+    // variable with the scope of this class
+    // it can be used in any method or other purpose in this class only
     int a, b;
 
-    // creating a constructer
-    // parameterized
+    // creating a parameterized v
     algebra(int x, int y) {
-
-        System.out.println("Constructer of algebra class called ");
+        System.out.println("Constructor of algebra class called ");
         a = x;
         b = y;
     }
 
-    // this are methods which are using variable that has class scope
+    // these are methods which are using variable that has class scope
     // int is return type its next is method name to use for call method
     int add() {
         return a + b;
@@ -39,11 +37,10 @@ class algebra {
 public class basic_constructers {
 
     public static void main(String[] args) {
-        // creating a object of algebra class
-        // when creaing a object constructer always calls
-        // all class has its default constructer if it isnot defined
+        // creating an object of algebra class
+        // when creating an object constructor always calls
+        // all class has its default constructor if it isn't defined
         algebra obj = new algebra(5, 7);
-        Scanner sc = new Scanner(System.in);
 
         System.out.println(obj.add());
         System.out.println(obj.sub());
@@ -51,7 +48,6 @@ public class basic_constructers {
         System.out.println(obj.div());
 
         algebra obj2 = new algebra(10, 7);
-
         System.out.println(obj2.add());
         System.out.println(obj2.sub());
         System.out.println(obj2.mul());
