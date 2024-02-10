@@ -1,13 +1,13 @@
 package Core_Java.applets;
 
-import javax.swing.*;
+import java.applet.Applet;
 import java.awt.*;
 
 /*
 <applet code="House" width="400" height="400"></applet>
  */
 
-public class House extends JApplet {
+public class House extends Applet {
 
     public void paint(Graphics g)
     {
