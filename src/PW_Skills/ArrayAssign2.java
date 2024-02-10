@@ -3,14 +3,12 @@ package PW_Skills;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayAssign2 {
+public class ArrayAssign2 extends AnswerSheet {
     public static void main(String[] args) {
-//        System.out.println("Q1. Answer");
-//        q1();
-        System.out.println("Q3. Answer");
-        q3();
-//        System.out.println("Q5. Answer");
-//        q5();
+
+        AnswerSheet sh1 = new ArrayAssign2();
+        sh1.display();
+
     }
 
     /*
@@ -18,9 +16,10 @@ public class ArrayAssign2 {
     all negative elements at the end of array without changing the order of positive elements
     and negative elements.
      */
-    static void q1() {
-//         int N = sc.nextInt();
-//         int[] arr = new int[N];
+    @Override
+    void Q1Answer() {
+        //int N = sc.nextInt();
+        //int[] arr = new int[N];
         int[] arr = {1, -1, 3, 2, -7, -5, 11, 6};
         int index = 0;
         int[] temp = new int[arr.length];
@@ -46,7 +45,8 @@ public class ArrayAssign2 {
     Union of the two arrays can be defined as the set containing distinct elements from both the arrays.
     If there are repetitions, then only one occurrence of element should be printed in the union.
     */
-    static void q2() {
+    @Override
+    void Q2Answer() {
         Scanner sc = new Scanner(System.in);
         int m, n;
         n = sc.nextInt();
@@ -66,7 +66,8 @@ public class ArrayAssign2 {
     Q3 - Given an array arr[] and an integer K where K is smaller than size of array, the task is to
     find the Kth smallest element in the given array. It is given that all array elements are distinct.
      */
-    static void q3() {
+    @Override
+    void Q3Answer() {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         int[] arr = new int[N];
@@ -88,11 +89,16 @@ public class ArrayAssign2 {
     You need to print the start and end index of answer subarray.
      */
 
+    @Override
+    void Q4Answer(){
+
+    }
 
     /*
     Q5 - Write a Java program to test the equality of two arrays.
      */
-    static void q5() {
+    @Override
+    void Q5Answer() {
         Scanner sc = new Scanner(System.in);
         int m, n;
         n = sc.nextInt();

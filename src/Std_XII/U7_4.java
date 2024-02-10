@@ -11,7 +11,6 @@ public class U7_4 {
         double interest;
 
         // computation
-
         principal = 17000;
         rate = 9.50;
         duration = 3;   // years
@@ -19,7 +18,7 @@ public class U7_4 {
         maturity = principal + interest;
 
         System.out.println("Principal amount: "+principal+"Rs.");
-        System.out.println("Deposit for duaration of "+duration+" years");
+        System.out.println("Deposit for duration of "+duration+" years");
         System.out.println("Interest rate: "+rate+"%");
         System.out.println("Interest amount: "+interest+" Rs.");
         System.out.println("Maturity amount: "+maturity+" Rs.");

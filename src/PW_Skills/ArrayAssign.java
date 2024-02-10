@@ -1,28 +1,19 @@
 package PW_Skills;
 
-public class ArrayAssign {
+public class ArrayAssign extends AnswerSheet {
 
     public static void main(String[] args) {
 
-        System.out.println("Q1. Answer");
-        q1();
-        System.out.println("Q2. Answer");
-        q2();
-        System.out.println("Q3. Answer");
-        q3();
-        System.out.println("Q4. Answer");
-        q4();
-        System.out.println("Q5. Answer");
-        q5();
-        System.out.println("Q6. Answer");
-        q6();
+        AnswerSheet sh1 = new ArrayAssign();
+        sh1.display();
+        Q6Answer();
 
     }
 
-//    Q1. Given an array of integers {2, 6, -5, -1, 0, 4, -9},
-//    print only the positive values present in the array.
-
-    static void q1() {
+    //    Q1. Given an array of integers {2, 6, -5, -1, 0, 4, -9},
+    //    print only the positive values present in the array.
+    @Override
+    void Q1Answer() {
         int[] arr = {2, 6, -5, -1, 0, 4, -9};
 
         for (int index : arr) {
@@ -35,10 +26,11 @@ public class ArrayAssign {
 
     /*
     Q2. Convert the list of Strings {“ab”, “bc”, “cd”, “de”, “ef”, “fg”, “gh”} into an array of strings and print all
-strings stored on odd indices of the array.
+    strings stored on odd indices of the array.
      */
 
-    static void q2() {
+    @Override
+    void Q2Answer() {
         String[] arr = {"ab", "bc", "cd", "de", "ef", "fg", "gh"};
 
         for (int i = 0; i < arr.length; i++) {
@@ -54,7 +46,8 @@ strings stored on odd indices of the array.
     Q3. Traverse over the elements of the array {1,2,3,4,5,6,7,8} using for each loop and print all even
 elements.
      */
-    static void q3() {
+    @Override
+    void Q3Answer() {
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
 
         for (int num : arr) {
@@ -69,7 +62,8 @@ elements.
     Q4. Calculate the minimum element in the array {2, -3, 5, 8, 1, 0, -4} using standard library method
 for calculating the minimum element.
      */
-    static void q4() {
+    @Override
+    void Q4Answer() {
 
         int[] arr = {2, -3, 5, 8, 1, 0, -4};
         int min = 0;
@@ -83,10 +77,11 @@ for calculating the minimum element.
 
     /*
     Q5. Find the first peak element in the array {1, 1, 3, 4, 2, 3, 5, 7, 0}
-Peak element is the one which is greater than its immediate left neighbor and its immediate right neighbor.
-Leftmost and rightmost element cannot be a peak element.
+    Peak element is the one that is greater than its immediate left neighbor and its immediate right neighbor.
+    Leftmost and rightmost element cannot be a peak element.
      */
-    static void q5() {
+    @Override
+    void Q5Answer() {
 
         int[] arr = {1, 1, 3, 4, 2, 3, 5, 7, 0};
 
@@ -100,8 +95,8 @@ Leftmost and rightmost element cannot be a peak element.
         System.out.println();
     }
 
-    // Q6. Search the given element x in the array , if present than return its index else return -1
-    static void q6() {
+    // Q6. Search the given element x in the array, if present than return its index else return -1
+    static void Q6Answer() {
 
         // linear search
         // first occurrence search
@@ -123,4 +118,6 @@ Leftmost and rightmost element cannot be a peak element.
 
         System.out.println();
     }
+
+
 }

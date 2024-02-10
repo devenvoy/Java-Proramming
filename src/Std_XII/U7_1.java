@@ -11,7 +11,6 @@ public class U7_1 {
         double duration;
         double cost;
 
-
         // computation
         balance = 170;
         rate = 1.02;
