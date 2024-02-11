@@ -1,6 +1,6 @@
 package PW_Skills;
 
-public class Assignment1 extends AnswerSheet {
+public class Assignment1  extends AnswerSheet{
 
     public static void main(String[] args) {
 
@@ -26,7 +26,7 @@ public class Assignment1 extends AnswerSheet {
 
     //    Q3 - Write a Java program to take the length and breadth of a rectangle and print its area.
     @Override
-    void Q3Answer() {
+     void Q3Answer() {
         int length = 6;
         int breadth = 5;
         System.out.println("Length of Rectangle " + length);

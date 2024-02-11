@@ -1,6 +1,11 @@
 package Core_Java.OOPS.Abstract_class;
 
 abstract class Vehicle {
-	abstract void go();
-	
+
+    void horn() {
+        System.out.println("Honk Honk");
+    }
+
+    abstract void go();
+
 }
