@@ -33,7 +33,7 @@ public class Extra1  extends Applet implements Runnable{
                 repaint();
                 Thread.sleep(500);
                 c=msg.charAt(0);
-                msg= msg.substring(1,msg.length());
+                msg= msg.substring(1);
                 msg+=c;
                 if(stopF){
                     break;
@@ -46,7 +46,7 @@ public class Extra1  extends Applet implements Runnable{
 
     @Override
     public void stop() {
-        stopF = true;
+        //stopF = true;
         t = null;
     }
 
