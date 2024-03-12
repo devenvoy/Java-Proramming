@@ -49,6 +49,7 @@ class square implements Area {
 }
 
 public class Q05 {
+
     public static void main(String[] args) {
         triangle t = new triangle(10, 5);
         rectangle r = new rectangle(10, 30);

@@ -2,9 +2,9 @@ package Core_Java.LinkedLists;
 
 public class SinglyLinkedList {
 
-    Node head = null;
-    Node tail = null;
-    int size = 0;
+    public Node head = null;
+    public Node tail = null;
+    public int size = 0;
 
     public static class Node {
         int data;
@@ -15,7 +15,7 @@ public class SinglyLinkedList {
         }
     }
 
-    void insertAtHead(int val) {
+    public void insertAtHead(int val) {
         Node temp = new Node(val);
         if (head == null) {
             head = tail = temp;
@@ -26,7 +26,7 @@ public class SinglyLinkedList {
         size++;
     }
 
-    void insertAt(int idx, int val) {
+    public void insertAt(int idx, int val) {
         Node t = new Node(val);
         Node temp = head;
         if (idx == size) {
@@ -47,7 +47,7 @@ public class SinglyLinkedList {
         size++;
     }
 
-    void insertAtTail(int val) {
+    public void insertAtTail(int val) {
         Node temp = new Node(val);
         if (head == null) {
             head = temp;
@@ -58,7 +58,7 @@ public class SinglyLinkedList {
         size++;
     }
 
-    void display() {
+    public void display() {
         Node temp = head;
         while (temp != null) {
             System.out.print(temp.data + " ");
@@ -95,7 +95,7 @@ public class SinglyLinkedList {
         return temp.data;
     }
 
-    void deleteAt(int idx) {
+    public void deleteAt(int idx) {
         if (idx == 0) {
             head = head.next;
             size--;

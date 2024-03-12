@@ -9,7 +9,7 @@ public class Clock extends Thread {
                 for (mm = 0; mm < 60; mm++) {
                     for (ss = 0; ss < 60; ss++) {
                         System.out.println(hh + ":" + mm + ":" + ss);
-                        t.sleep(1000);
+                        sleep(1000);
                     }
                 }
             }
