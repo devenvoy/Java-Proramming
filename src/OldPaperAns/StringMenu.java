@@ -3,9 +3,9 @@ package OldPaperAns;
 import java.util.Scanner;
 
 public class StringMenu {
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
         String str = "";
         System.out.println("Enter String : ");
         str = sc.nextLine();

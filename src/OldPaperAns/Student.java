@@ -6,6 +6,7 @@ public class Student implements Comparable<Student> {
 
     String name;
     int rollno;
+    static Scanner sc = new Scanner(System.in);
 
     @Override
     public int compareTo(Student s) {
@@ -13,7 +14,6 @@ public class Student implements Comparable<Student> {
     }
 
     Student() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter Name : ");
         name = sc.nextLine();
         System.out.println("Enter RollNo");

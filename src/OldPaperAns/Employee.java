@@ -8,6 +8,7 @@ public class Employee implements Comparator<Employee> {
     String name;
     int age;
     int salary;
+    Scanner sc = new Scanner(System.in);
 
     @Override
     public int compare(Employee e1,Employee e2){
@@ -15,7 +16,6 @@ public class Employee implements Comparator<Employee> {
     }
 
     public void getData() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter Name:");
         name = sc.next();
         System.out.println("Enter Age:");

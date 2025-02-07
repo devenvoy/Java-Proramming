@@ -3,9 +3,9 @@ package OldPaperAns;
 import java.util.Scanner;
 
 public class Main {
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         int op;
-        Scanner sc = new Scanner(System.in);
         System.out.println("*linkedlist opretion");
 
         menu:

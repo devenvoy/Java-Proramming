@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class EmpAns {
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
         System.out.println("Number Of Employee: ");
         int n = sc.nextInt();
 

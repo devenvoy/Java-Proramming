@@ -12,7 +12,7 @@ public class Compound_intrest {
         System.out.print("Enter the time in year: ");
         double t = sc.nextDouble();
         System.out.print("Enter the number of times that \ninterest is compounded per year: ");
-        int n = sc.nextInt();
+        // int n = sc.nextInt();
 
         sc.close();
         double amt = p * (Math.pow((1 + r / 100), t));
