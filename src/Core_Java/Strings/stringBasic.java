@@ -20,5 +20,6 @@ public class stringBasic {
         // take input ignoring all whitespaces // multiline input
         String s1 = sc.nextLine();
         System.out.println(s1);
+        sc.close();
     }
 }

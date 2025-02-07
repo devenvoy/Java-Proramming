@@ -12,8 +12,10 @@ public class perfect {
         Scanner sc = new Scanner(System.in);
 
         int num = sc.nextInt();
+        sc.close();
         perfect_num(num);
     }
+
     public static void perfect_num(int num) {
         int j = 0, fact, fsum = 0;
 
@@ -27,6 +29,7 @@ public class perfect {
         fsum -= num;
         isperfect(fsum, num);
     }
+
     public static void isperfect(int sum, int num) {
         if (sum == num) {
             System.out.println(num + " is Perfect Number.");

@@ -1,6 +1,9 @@
+package Core_Java.Applets;
+
 import java.applet.Applet;
 import java.awt.*;
 
+@SuppressWarnings("removal")
 public class Q10 extends Applet {
 
     private Color backgroundColor;
@@ -28,8 +31,8 @@ public class Q10 extends Applet {
 }
 
 /*
- <applet code="Q10" width="400" height="300">
-        <param name="color" value="000000">
-        <!-- Pass color parameter in hex format -->
-    </applet>
+ * <applet code="Q10" width="400" height="300">
+ * <param name="color" value="000000">
+ * <!-- Pass color parameter in hex format -->
+ * </applet>
  */

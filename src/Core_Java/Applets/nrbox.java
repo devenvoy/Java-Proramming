@@ -1,6 +1,8 @@
+package Core_Java.Applets;
 import java.awt.*;
 import java.applet.*;
 
+@SuppressWarnings("removal")
 public class nrbox extends Applet{
 
     public void paint(Graphics g){

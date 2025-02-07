@@ -12,6 +12,7 @@ public class basic_profit_loss {
         System.out.print("Enter the Selling Price : ");
         sp = sc.nextFloat();
 
+        sc.close();
         if (sp < cp) {
             loss = cp - sp;
             System.out.print("The loss is : " + loss);

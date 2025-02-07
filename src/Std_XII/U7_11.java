@@ -1,6 +1,7 @@
 package Std_XII;
 
 public class U7_11 {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
 
         int x = 10;

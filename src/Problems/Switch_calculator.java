@@ -15,6 +15,7 @@ class Switch_calculator {
         num1 = sc.nextDouble();
         System.out.print("Enter second number : ");
         num2 = sc.nextDouble();
+        sc.close();
         switch (op) {
             case '+':
                 ans = num1 + num2;

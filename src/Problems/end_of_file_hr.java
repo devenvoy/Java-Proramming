@@ -11,5 +11,6 @@ public class end_of_file_hr {
             i += 1;
             System.out.println(i + " " + sc.nextLine());
         }
+        sc.close();
     }
 }

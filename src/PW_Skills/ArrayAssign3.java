@@ -4,18 +4,21 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayAssign3 extends AnswerSheet {
+    Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
-        AnswerSheet sh1  = new ArrayAssign3();
+        AnswerSheet sh1 = new ArrayAssign3();
         sh1.display();
     }
 
     /*
-    Q1 - Given an array sorted in increasing order of size n and an integer x,
-    find if there exists a pair in the array whose absolute difference is exactly x.(n>1)
+     * Q1 - Given an array sorted in increasing order of size n and an integer x,
+     * find if there exists a pair in the array whose absolute difference is exactly
+     * x.(n>1)
      */
     @Override
     void Q1Answer() {
-        Scanner sc = new Scanner(System.in);
+
         System.out.println("Enter Array Size");
         int N = sc.nextInt();
         int[] arr = new int[N];
@@ -33,7 +36,7 @@ public class ArrayAssign3 extends AnswerSheet {
             for (int j = i - 1; j >= 0; j--) {
                 if (arr[i] - arr[j] == X) {
                     ans++;
-//                    System.out.println(arr[j] + " " + arr[i]);
+                    // System.out.println(arr[j] + " " + arr[i]);
                 }
             }
         }
@@ -46,11 +49,11 @@ public class ArrayAssign3 extends AnswerSheet {
     }
 
     /*
-    Q2 - Given an array of size n, find the total number of occurrences of given number x.
+     * Q2 - Given an array of size n, find the total number of occurrences of given
+     * number x.
      */
     @Override
     void Q2Answer() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter Array Size");
         int N = sc.nextInt();
         int[] arr = new int[N];
@@ -73,12 +76,13 @@ public class ArrayAssign3 extends AnswerSheet {
     }
 
     /*
-   Q3 - Given an array arr[] of size N-1 with integers in the range of [1, N], the task is to find the
-   missing number from the first N integers. There are no duplicates in the list.
-    */
+     * Q3 - Given an array arr[] of size N-1 with integers in the range of [1, N],
+     * the task is to find the
+     * missing number from the first N integers. There are no duplicates in the
+     * list.
+     */
     @Override
     void Q3Answer() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter Size of Array:");
         int N = sc.nextInt();
         int[] arr = new int[N - 1];
@@ -105,13 +109,13 @@ public class ArrayAssign3 extends AnswerSheet {
     private static int findMissingNumber(int N, int[] arr) {
 
         // array be like start from 1 and its last element will be size of an array
-        //so if N = 10 then arr = {1,2,3,4,5,6,7,8,9,10}
+        // so if N = 10 then arr = {1,2,3,4,5,6,7,8,9,10}
         // but in given array one element is missing, we want to find that
 
         int totalSum = N * (N + 1) / 2;
         // 10 * (10+1) / 2
         // 10 * 11 / 2
-        // 110 / 2   ==     55
+        // 110 / 2 == 55
         // 1+2+3+4+5+6+7+8+9+10 == 55
 
         int sum = 0;
@@ -119,10 +123,8 @@ public class ArrayAssign3 extends AnswerSheet {
         for (int i = 0; i < N - 1; i++) {
             sum += arr[i];
         }
-
         // subtract given an array sum from original totalSum
         return totalSum - sum;
     }
-
 
 }

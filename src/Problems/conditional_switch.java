@@ -13,7 +13,7 @@ public class conditional_switch {
 
         System.out.println("Enter day number of week:");
         int day = sc.nextInt();
-
+        sc.close();
         switch (day) {
             case 1:
                 System.out.println("Monday");

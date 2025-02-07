@@ -8,15 +8,15 @@ public class count_digit {
 
         System.out.print("Enter a number :");
         int num = sc.nextInt();
-
+        sc.close();
         int count = 0;
 
-        while(num != 0){
+        while (num != 0) {
             num /= 10;
             count++;
         }
 
-        System.out.println("There are "+count+" digits in number.");
+        System.out.println("There are " + count + " digits in number.");
 
     }
 }

@@ -1,6 +1,7 @@
 package Clg_Journal;
 
 public class Q01 {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         int sum = 0;
         int l = args.length;

@@ -31,8 +31,6 @@ class b extends A {
     @Override
     public void show() {
 
-        final double pi;
-
         System.out.println(Math.max(20, 50));
         Random r = new Random();
         int r1 = (r.nextInt()) * -1;
@@ -86,6 +84,7 @@ class C extends A {
         this.num1 = c1.num1;
     }
 
+    @SuppressWarnings("unused")
     void arrayMethods() {
         Integer[] num = { 80, 99, 69, 1, 5 };
 

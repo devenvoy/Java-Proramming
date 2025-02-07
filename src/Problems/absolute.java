@@ -8,6 +8,7 @@ public class absolute {
         int num;
         System.out.print("Enter the number : ");
         num = sc.nextInt();
+        sc.close();
         if (num < 0) {
             num = num * -1;
         }

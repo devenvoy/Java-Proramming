@@ -2,7 +2,6 @@ package Core_Java.Threads;
 
 public class Rdemo {
     public static void main(String[] args) {
-        demo d = new demo();
         try {
             for (int i = 5; i > 0; i--) {
                 System.out.println("Main Thread " + i);

@@ -7,13 +7,15 @@ public class middlechar_s {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the string here:");
         String str = sc.nextLine();
+        sc.close();
         System.out.println(middle(str));
     }
-    public static String middle(String s){
-        if(s.length()%2==0){
-            return s.substring(s.length()/2-1,s.length()/2+1);
+
+    public static String middle(String s) {
+        if (s.length() % 2 == 0) {
+            return s.substring(s.length() / 2 - 1, s.length() / 2 + 1);
         } else {
-            return s.substring(s.length()/2,s.length()/2+1);
+            return s.substring(s.length() / 2, s.length() / 2 + 1);
         }
     }
 }

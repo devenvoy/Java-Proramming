@@ -16,8 +16,8 @@ public class palindromicS {
                 }
             }
         }
-        System.out.println("\nThe Number of palindromic string is "+ count);
-
+        System.out.println("\nThe Number of palindromic string is " + count);
+        sc.close();
     }
 
     public static boolean ispalindrome(String s){

@@ -6,6 +6,7 @@ public class prime_triange {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int x1 = sc.nextInt(); // denoting the lenght of pattern
+        sc.close();
         int number = 3;
         int d = x1-1; // line number or equal to number of space at each line
         for (int i = 1; i <= x1; i++) {

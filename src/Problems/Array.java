@@ -3,6 +3,8 @@ package Problems;
 import java.util.Scanner;
 
 public class Array {
+    public static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
 
         System.out.println("1-D Array example:");
@@ -12,8 +14,7 @@ public class Array {
         Array2();
     }
 
-     public static void Array1()  {
-        Scanner sc = new Scanner(System.in);
+    public static void Array1() {
 
         int n = sc.nextInt();
 
@@ -23,18 +24,16 @@ public class Array {
             System.out.println("Enter " + i + 1 + " element:");
             arr[i] = sc.nextInt();
         }
-
         for (int i = 0; i < n; i++) {
             System.out.print("\t" + arr[i]);
         }
     }
 
-    public static void Array2(){
-        Scanner sc = new Scanner(System.in);
+    public static void Array2() {
         int[][] matrix = new int[3][3];
 
-        for(int i = 0; i < 3; i++){
-            for(int j = 0; j < 3; j++){
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 System.out.print("Enter element in matrix:");
                 matrix[i][j] = sc.nextInt();
             }
@@ -42,9 +41,9 @@ public class Array {
 
         System.out.println();
         System.out.println("Matrix A =>");
-        for(int i = 0; i < 3; i++){
-            for(int j = 0; j < 3; j++){
-                System.out.print(" "+matrix[i][j]);
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(" " + matrix[i][j]);
             }
             System.out.println();
         }

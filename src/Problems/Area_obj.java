@@ -39,5 +39,6 @@ public class Area_obj {
             System.out.println("Exiting . . .");
             System.out.println("Come Again ..");
         }
+        sc.close();
     }
 }

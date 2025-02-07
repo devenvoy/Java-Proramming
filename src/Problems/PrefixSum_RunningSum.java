@@ -5,16 +5,17 @@ import java.util.Scanner;
 public class PrefixSum_RunningSum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-/*
-Given an array of integers of size n. Answer q queries where you need to print the sum
-of values in a given range of indices from I to r (both included).
-Note:The values ofl and r in queries follow I-based indexing.
- */
+        /*
+         * Given an array of integers of size n. Answer q queries where you need to
+         * print the sum
+         * of values in a given range of indices from I to r (both included).
+         * Note:The values ofl and r in queries follow I-based indexing.
+         */
 
         System.out.println("Enter size of Array");
         int n = sc.nextInt();
         System.out.println("Enter Elements: ");
-        int[] arr = new int[n+1];
+        int[] arr = new int[n + 1];
         for (int i = 1; i <= n; i++) {
             arr[i] = sc.nextInt();
         }
@@ -30,12 +31,14 @@ Note:The values ofl and r in queries follow I-based indexing.
             int r = sc.nextInt();
             System.out.println("Sum :" + (ans[r] - ans[l - 1]));
         }
+        sc.close();
 
-/*
-Check if we can partition the array into two arrays with an equal sum.
-More formally, check that the prefix sum of a part of the array is equal to the suffix
-sum of the rest of the array.
-*/
+        /*
+         * Check if we can partition the array into two arrays with an equal sum.
+         * More formally, check that the prefix sum of a part of the array is equal to
+         * the suffix
+         * sum of the rest of the array.
+         */
 
     }
 
@@ -46,6 +49,5 @@ sum of the rest of the array.
         }
         return arr;
     }
-
 
 }

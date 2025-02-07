@@ -3,7 +3,7 @@ package Clg_Journal;
 import java.applet.Applet;
 import java.awt.*;
 
-
+@SuppressWarnings("removal")
 public class Q11 extends Applet{
         
     @Override

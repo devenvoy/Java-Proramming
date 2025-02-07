@@ -17,10 +17,10 @@ public class simple_interest {
         float d = sc.nextFloat();
         float t = d / 12;
         float si = (p * i * t) / 100;
-
+        sc.close();
         System.out.println("Principle :" + p);
         System.out.println("Rate of interest :" + i);
-        System.out.println("Duration of time :" + t +" year");
+        System.out.println("Duration of time :" + t + " year");
         System.out.println("Simple interest :" + si);
 
     }

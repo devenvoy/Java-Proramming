@@ -16,12 +16,12 @@ public class Target_sum {
 
         System.out.println("Enter Target sum");
         int target = sc.nextInt();
-
+        sc.close();
 
         // print the pairs that sum == target
-//        pairsOfTwo(arr, target);
+        // pairsOfTwo(arr, target);
 
-        //  print the triplets that sum == target
+        // print the triplets that sum == target
         pairsOfThree(arr, target);
     }
 
@@ -40,6 +40,7 @@ public class Target_sum {
         System.out.println(ans + " Triplets");
     }
 
+    @SuppressWarnings("unused")
     private static void pairsOfTwo(int[] arr, int target) {
         int ans = 0;
         for (int i = 0; i < arr.length; i++) {

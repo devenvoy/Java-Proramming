@@ -11,6 +11,7 @@ public class str_int_char {
         str += 10;
         System.out.println(str);
         System.out.println("abc"+10+20); // abc1020
-        System.out.println(10+20+"abc");  //30abc
+        System.out.println(10 + 20 + "abc"); //30abc
+        sc.close();
     }
 }

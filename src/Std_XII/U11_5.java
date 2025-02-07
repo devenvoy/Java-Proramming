@@ -12,10 +12,10 @@ public class U11_5 {
             scan = new Scanner(System.in);
             System.out.println("first num:");
             num1 = scan.nextInt();
-//            boolean flag = scan.nextBoolean();
-//            double db = scan.nextDouble();
+            // boolean flag = scan.nextBoolean();
+            // double db = scan.nextDouble();
             scan.nextLine();
-            String name = scan.nextLine();
+            // String name = scan.nextLine();
             System.out.println("second num:");
             num2 = scan.nextInt();
 
@@ -36,4 +36,3 @@ public class U11_5 {
     }
 
 }
-

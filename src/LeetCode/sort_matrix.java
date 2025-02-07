@@ -17,23 +17,22 @@ public class sort_matrix {
                 transpose_mat[j][i] = matrix[i][j];
             }
         }
-
+        sc.close();
         // Sort matrix row wise
         for (int i = 0; i < 3; i++) {
             Arrays.sort(transpose_mat[i]);
         }
 
-        for(int i = 0;i<3;i++){
-            for(int j = 0 ;j<3;j++){
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 sort_mat[i][j] = transpose_mat[j][i];
             }
         }
 
         // sort matrix column wise
-        for(int j = 0;j< 3;j++){
+        for (int j = 0; j < 3; j++) {
             Arrays.sort(sort_mat[j]);
         }
-
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {

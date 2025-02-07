@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 // User Defined Exceptions
 public class UDFException {
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) throws PriceException {
 
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter Your Age");
         int age = sc.nextInt();
         try {

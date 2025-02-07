@@ -3,11 +3,12 @@ package Problems;
 import static Problems.ReverseArray.printArray;
 
 public class RotateArray {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5};
+        int[] arr = { 1, 2, 3, 4, 5 };
         int k = 3;
         int[] ans = rotateArr(arr, k);
-//        printArray(ans);
+        // printArray(ans);
         rotateArrInplace(arr, k);
         printArray(arr);
 

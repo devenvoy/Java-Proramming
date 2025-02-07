@@ -8,6 +8,7 @@ public class marks_grade {
         int marks;
         System.out.print("Enter the marks : ");
         marks = sc.nextInt();
+        sc.close();
         if (marks >= 90) {
             System.out.print("Your Grade is A+");
         } else if (marks >= 80) {

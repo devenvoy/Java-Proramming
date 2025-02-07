@@ -8,10 +8,10 @@ public class first_n_factorial {
 
         int factorial = 1;
         int n = sc.nextInt();
-
-        for (int i = 1;i<=n;i++){
-            factorial = factorial*i;
-            System.out.println("Factorial of "+i+" is "+factorial);
+        sc.close();
+        for (int i = 1; i <= n; i++) {
+            factorial = factorial * i;
+            System.out.println("Factorial of " + i + " is " + factorial);
         }
 
     }

@@ -8,6 +8,7 @@ public class armstrong_n {
 
         int n;
         n = sc.nextInt();
+        sc.close();
         int num = 1;
         while (num <= n) {// runs loop from 1 to n times
             int count = 0;

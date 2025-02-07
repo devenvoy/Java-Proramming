@@ -4,11 +4,10 @@ package Std_XII;
 public class U10_10 {
     public static void main(String[] args) {
         String[] citylist = {"Ahmedabad", "Baroda", "Rajkot", "Surat"};
-        int num ;
-
+        
         try {
             System.out.println("Before Error Statement:\n");
-            num = 15 / 0;
+            // int num = 15 / 0;
             System.out.println(citylist[5]);
             System.out.println("After Error Statement:\n\n");
         } catch (ArrayIndexOutOfBoundsException eobj) {

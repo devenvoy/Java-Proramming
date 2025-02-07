@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class array_example {
 
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] marks = new int[5];
@@ -19,7 +18,7 @@ public class array_example {
             System.out.print("Enter Element: ");
             marks[i] = sc.nextInt();
         }
-
+        sc.close();
         for (int i = 0; i < 4; i++) {
             if (marks[i] < marks[i + 1]) {
                 temp = marks[i + 1];

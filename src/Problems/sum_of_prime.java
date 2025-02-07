@@ -7,8 +7,8 @@ public class sum_of_prime {
 
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-
-        if (isPrime(n) && isPrime(n-2)) {
+        sc.close();
+        if (isPrime(n) && isPrime(n - 2)) {
             System.out.println("True");
         } else {
             System.out.println("false");
@@ -28,11 +28,14 @@ public class sum_of_prime {
     }
 }
 /*
- * Q9 Write a program to check whether a prime Number can be expressed as a Sum of Two Prime Numbers.
+ * Q9 Write a program to check whether a prime Number can be expressed as a Sum
+ * of Two Prime Numbers.
  * 
  * 
-Hint: Apart from 2, all of the prime numbers are odd. So it is not possible to represent a prime number
-(which is odd) to be written as a sum of two odd prime numbers, so we are sure that one of the two
-prime numbers should be 2. So we have to check whether n-2 is prime or not.
+ * Hint: Apart from 2, all of the prime numbers are odd. So it is not possible
+ * to represent a prime number
+ * (which is odd) to be written as a sum of two odd prime numbers, so we are
+ * sure that one of the two
+ * prime numbers should be 2. So we have to check whether n-2 is prime or not.
  * 
  */

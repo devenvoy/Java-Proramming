@@ -31,5 +31,6 @@ public class Pw2 {
         b = sc.nextInt();
         Area a = new Area(l, b);
         System.out.println("Area :" + a.getArea());
+        sc.close();
     }
 }

@@ -3,7 +3,7 @@ package Clg_Journal;
 import java.applet.Applet;
 import java.awt.*;
 
-
+@SuppressWarnings("removal")
 public class Q09 extends Applet{
 
     int squares;
@@ -56,7 +56,7 @@ public class Q09 extends Applet{
 
     }
 }
-  
+
 /*
 <applet code = "Squares" width = "400" height = "500">
 <param name=qty value=15>

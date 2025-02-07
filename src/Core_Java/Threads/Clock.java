@@ -4,7 +4,7 @@ public class Clock extends Thread {
     public static void main(String[] args) {
         int hh, mm, ss;
         try {
-            Thread t = new Thread("Clock");
+            // Thread t = new Thread("Clock");
             for (hh = 0; hh < 24; hh++) {
                 for (mm = 0; mm < 60; mm++) {
                     for (ss = 0; ss < 60; ss++) {

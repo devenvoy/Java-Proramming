@@ -1,8 +1,11 @@
+package Core_Java.Applets;
+
 import java.applet.Applet;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+@SuppressWarnings("removal")
 public class W extends Applet implements ActionListener, Runnable {
     private int angle = 0; // current angle of rotation
     private boolean rotating = false; // flag to control rotation
@@ -11,15 +14,15 @@ public class W extends Applet implements ActionListener, Runnable {
     public void init() {
         // Set layout
         setLayout(new BorderLayout());
-        
+
         // Create buttons
         startButton = new Button("Start");
         stopButton = new Button("Stop");
-        
+
         // Add action listeners to buttons
         startButton.addActionListener(this);
         stopButton.addActionListener(this);
-        
+
         // Add buttons to the applet
         add(startButton, BorderLayout.WEST);
         add(stopButton, BorderLayout.EAST);
@@ -81,5 +84,5 @@ public class W extends Applet implements ActionListener, Runnable {
 }
 
 /*
- <applet code="W" width =400 height=200></applet>
+ * <applet code="W" width =400 height=200></applet>
  */

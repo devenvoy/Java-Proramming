@@ -10,13 +10,13 @@ public class first_n_fibonacci {
         int n = sc.nextInt();
         int n1 = 0;
         int n2 = 1;
-
+        sc.close();
         int n3 = n1 + n2;
         int i = 0;
 
         System.out.print(n1 + " " + n2 + " " + n3 + " ");
 
-        while (i <= n-3) {
+        while (i <= n - 3) {
             n1 = n2;
             n2 = n3;
             n3 = n1 + n2;

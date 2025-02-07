@@ -9,8 +9,8 @@ class InvalidMarksException extends java.lang.Exception {
 }
 
 public class U10_21 {
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         int marks;
         boolean continueLoop = true;
         do {

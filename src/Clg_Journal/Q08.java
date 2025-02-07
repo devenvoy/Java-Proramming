@@ -21,5 +21,8 @@ public class Q08 {
         } catch (ArithmeticException e) {
             System.out.println("You Can't Divide any number with Zero \n" + e);
         }
+        finally {
+            sc.close();
+        }
     }
 }

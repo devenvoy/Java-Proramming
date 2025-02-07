@@ -1,7 +1,5 @@
 package Core_Java.OOPS.Inheritance;
 
-import Core_Java.OOPS.Inheritance.Hero;
-
 public class Super_key {
 
 	public static void main(String[] args) {

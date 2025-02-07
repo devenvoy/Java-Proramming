@@ -1,19 +1,22 @@
+package Core_Java.Applets;
+
 import java.applet.*;
 import java.awt.*;
- 
- 
-public class Smiley  extends Applet{
-        
+
+@SuppressWarnings("removal")
+public class Smiley extends Applet {
+
     @Override
     public void init() {
         super.init();
         // setBackground(Color.black);
     }
-    public void paint(Graphics g){
-        
+
+    public void paint(Graphics g) {
+
         // Outer Circle
         // g.setColor(Color.white);
-        g.drawOval(50,50,300,300);
+        g.drawOval(50, 50, 300, 300);
         // g.drawOval(49,49,301,301);
         // g.drawOval(48,48,302,302);
         g.setColor(Color.yellow);
@@ -44,7 +47,7 @@ public class Smiley  extends Applet{
 
     }
 }
-  
+
 /*
-<applet code = "Smiley" width = "400" height = "400"></applet>
-*/
+ * <applet code = "Smiley" width = "400" height = "400"></applet>
+ */

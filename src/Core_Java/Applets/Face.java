@@ -1,14 +1,16 @@
+package Core_Java.Applets;
+
 import java.applet.*;
 import java.awt.*;
- 
- 
-public class Face  extends Applet{
-        
-    public void paint(Graphics g){
 
-        //Head
+@SuppressWarnings("removal")
+public class Face extends Applet {
+
+    public void paint(Graphics g) {
+
+        // Head
         g.drawOval(40, 40, 120, 150);
-        //Left Eye
+        // Left Eye
         g.drawOval(57, 75, 30, 20);
         // Right Eye
         g.drawOval(110, 75, 30, 20);
@@ -17,7 +19,7 @@ public class Face  extends Applet{
         // Pupil Right
         g.fillOval(121, 81, 10, 10);
 
-        //Nose
+        // Nose
         g.drawOval(85, 100, 30, 30);
 
         // Mouth
@@ -25,14 +27,13 @@ public class Face  extends Applet{
 
         // Left Ear
         g.drawOval(25, 92, 15, 30);
-    
-        // Right Ear        
+
+        // Right Ear
         g.drawOval(160, 92, 15, 30);
-        
-        
+
     }
 }
-  
+
 /*
-<applet code = "Face" width = "400" height = "400"></applet>
-*/
+ * <applet code = "Face" width = "400" height = "400"></applet>
+ */

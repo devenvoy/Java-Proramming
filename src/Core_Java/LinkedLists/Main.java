@@ -6,6 +6,7 @@ public class Main {
         doublyLinkedExample();
     }
 
+    @SuppressWarnings("unused")
     private static void singlyLinkedListExample() {
         SinglyLinkedList ll = new SinglyLinkedList();
         ll.insertAtTail(5);

@@ -16,6 +16,7 @@ public class has_nextint_eg {
                 break;
             }
         }
+        scn.close();
         System.out.print(sum);
     }
 

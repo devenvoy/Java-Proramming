@@ -13,6 +13,7 @@ public class matrix_sort {
             System.out.print("Enter Element: ");
             marks[i] = sc.nextInt();
         }
+        sc.close();
 
         for (int j = 0; j < 9; j++) {
             for (int i = 0; i < 8; i++) {
@@ -28,7 +29,7 @@ public class matrix_sort {
 
         for (int i = 0; i < 9; i++) {
             System.out.print(marks[i]);
-            if(i==2 || i == 5){
+            if (i == 2 || i == 5) {
                 System.out.println();
             }
         }

@@ -2,11 +2,13 @@ package Core_Java.DataTypes;
 
 import java.util.Random;
 
+@SuppressWarnings("unused")
 public class DiceRoller {
 
     // Global Scope / Class Scope
     Random random = new Random();
     int number = 0;
+
     DiceRoller() {
         // Local Scope
         int num2 = 10;

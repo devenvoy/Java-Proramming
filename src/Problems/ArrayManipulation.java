@@ -10,6 +10,7 @@ public class ArrayManipulation {
         for (int i = 0; i < N; i++) {
             arr[i] = sc.nextInt();
         }
+        sc.close();
         distinctElementFromArray(arr);
     }
 

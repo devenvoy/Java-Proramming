@@ -1,8 +1,5 @@
 package Core_Java.OOPS.Class_Objects;
 
-import Core_Java.OOPS.Class_Objects.Car;
-import Core_Java.OOPS.Class_Objects.Garage;
-
 public class Object_Args {
 
 	public static void main(String[] args) {

@@ -4,6 +4,7 @@ import java.applet.Applet;
 import java.awt.Color;
 import java.awt.Graphics;
 
+@SuppressWarnings("removal")
 // Triangle in circle
 public class Q16 extends Applet {
 

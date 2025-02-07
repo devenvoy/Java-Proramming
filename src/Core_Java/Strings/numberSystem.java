@@ -18,7 +18,8 @@ public class numberSystem {
         System.out.println("Decimal to binary :");
         System.out.print("Enter number:");
         int dec_num = sc.nextInt();
-        System.out.println("Ans:"+Decimaltobinary(dec_num));
+        System.out.println("Ans:" + Decimaltobinary(dec_num));
+        sc.close();
     }
     public static int Binarytodecimal(int n){
         int ans = 0;

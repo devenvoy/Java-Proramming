@@ -19,12 +19,11 @@ public class taking_input {
         // String line input
         System.out.print("Enter about yourself: ");
         String data1 = sc.nextLine();
-
+        sc.close();
         System.out.println();
         System.out.println("Number is :" + num_1);
         System.out.println("Your name is  :" + name);
         System.out.println("bio  :   " + data1);
-
 
     }
 }

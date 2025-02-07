@@ -8,6 +8,7 @@ public class ifelseif {
         
         System.out.println("Enter Any number: btw(0 To 99)");
         int num = sc.nextInt();
+        sc.close();
         if (num % 2 == 0) {
             System.out.println("Even");
         } else {

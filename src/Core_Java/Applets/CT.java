@@ -1,6 +1,8 @@
+package Core_Java.Applets;
 import java.applet.*;
 import java.awt.*;
 
+@SuppressWarnings("removal")
 public class CT extends Applet{
 
     public void paint(Graphics g){

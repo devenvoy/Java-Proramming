@@ -1,6 +1,7 @@
 package Core_Java.UserInput;
 
 import java.util.Scanner;
+
 public class InputData {
 
 	public static void main(String[] args) {
@@ -13,10 +14,10 @@ public class InputData {
 		sc.nextLine();
 		System.out.println("What is your favorite food?");
 		String food = sc.nextLine();
-		
-		System.out.println("Hello "+name);
-		System.out.println("You are "+age+" years old");
-		System.out.println("You Like "+food);
+		sc.close();
+		System.out.println("Hello " + name);
+		System.out.println("You are " + age + " years old");
+		System.out.println("You Like " + food);
 
 	}
 

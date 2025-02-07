@@ -40,7 +40,7 @@ public class expressions_ops {
 		} else {
 			System.out.println("You Still Playing Game ");
 		}
-		
+		sc.close();
 	}
 
 }

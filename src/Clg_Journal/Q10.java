@@ -3,6 +3,7 @@ package Clg_Journal;
 import java.applet.Applet;
 import java.awt.*;
 
+@SuppressWarnings("removal")
 public class Q10 extends Applet {
     private Color backgroundColor;
 

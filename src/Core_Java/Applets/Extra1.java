@@ -1,9 +1,10 @@
 // Message movement program at fix location using repaint and thread
-
+package Core_Java.Applets;
 import java.applet.*;
 import java.awt.*;
  
  
+@SuppressWarnings("removal")
 public class Extra1  extends Applet implements Runnable{
         
     String msg = "Banner Motion";

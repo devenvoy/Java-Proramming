@@ -15,6 +15,7 @@ public class Running_Sum_1480 {
         for (int i = 0; i < n; i++) {
             nums[i] = sc.nextInt();
         }
+        sc.close();
         // you can print an array using this method
         // otherwise it will print garbage value
         System.out.println(Arrays.toString(runningSum(nums)));

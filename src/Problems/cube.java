@@ -7,8 +7,9 @@ public class cube {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter number to find its cube:");
-        int n =sc.nextInt();
-        int x = n*n*n;
-        System.out.println("Cube of "+n+" is "+x);
+        int n = sc.nextInt();
+        sc.close();
+        int x = n * n * n;
+        System.out.println("Cube of " + n + " is " + x);
     }
 }

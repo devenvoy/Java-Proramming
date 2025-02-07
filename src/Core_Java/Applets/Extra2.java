@@ -1,14 +1,14 @@
 // Movement of Object with Mesage toward Left hand side
-
+package Core_Java.Applets;
 import java.applet.*;
 import java.awt.*;
- 
- 
-public class Extra2  extends Applet implements Runnable{
-       
+
+@SuppressWarnings("removal")
+public class Extra2 extends Applet implements Runnable {
+
     Thread t = null;
     boolean stopF;
-    int width , height;
+    int width, height;
     int x, y;
 
     @Override
@@ -16,10 +16,10 @@ public class Extra2  extends Applet implements Runnable{
         width = getSize().width;
         height = getSize().height;
         setBackground(Color.yellow);
-        x = width/2-20;
-        y = height/2-20;
+        x = width / 2 - 20;
+        y = height / 2 - 20;
         stopF = false;
-    }  // init
+    } // init
 
     @Override
     public void start() {
@@ -27,21 +27,21 @@ public class Extra2  extends Applet implements Runnable{
         t.start();
     } // start
 
-    public void paint(Graphics g){
+    public void paint(Graphics g) {
         setForeground(Color.red);
-        g.drawRect(x, y,70,40);
-        g.drawString("Devansh", x+5,y+25);
+        g.drawRect(x, y, 70, 40);
+        g.drawString("Devansh", x + 5, y + 25);
         showStatus("Hello");
     } // paint
 
     @Override
     public void run() {
-        for(;;){
+        for (;;) {
             try {
                 Thread.sleep(250);
                 repaint();
-                x = x-1;
-                if(stopF){
+                x = x - 1;
+                if (stopF) {
                     break;
                 }
             } catch (InterruptedException e) {
@@ -53,9 +53,9 @@ public class Extra2  extends Applet implements Runnable{
     public void stop() {
         stopF = true;
         t = null;
-    } /// stop 
-}   // class
-  
+    } /// stop
+} // class
+
 /*
-<applet code = "Extra2" width = "300" height = "100"></applet>
-*/
+ * <applet code = "Extra2" width = "300" height = "100"></applet>
+ */

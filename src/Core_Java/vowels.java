@@ -8,6 +8,7 @@ public class vowels {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the line here:");
         String str = sc.nextLine();
+        sc.close();
         System.out.println(count(str));
     }
 

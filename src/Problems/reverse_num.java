@@ -8,17 +8,17 @@ public class reverse_num {
 
         System.out.print("Enter a number :");
         int num = sc.nextInt();
-
+        sc.close();
         int rem;
         int rev = 0;
 
-        while(num != 0){
+        while (num != 0) {
             rem = num % 10;
-            rev  = (rev*10) + rem;
+            rev = (rev * 10) + rem;
             num /= 10;
         }
 
-        System.out.println("Reverse of number is "+rev );
+        System.out.println("Reverse of number is " + rev);
 
     }
 }

@@ -10,7 +10,7 @@ public class happynumber {
         // get number input
         System.out.println("Enter number :");
         int n = sc.nextInt();
-
+        sc.close();
         if (obj.isHappyNumber(n)) {
             System.out.println(n + " is Happy Number.");
         } else {
