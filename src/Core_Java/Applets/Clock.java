@@ -5,7 +5,7 @@ import java.util.*;
 /*
 <applet code="C" WIDTH = "500" HEIGHT ="500"></applet>*/
 
-public class C extends Applet implements Runnable
+public class Clock extends Applet implements Runnable
 {
 
 
@@ -21,7 +21,7 @@ public class C extends Applet implements Runnable
 		while(true){
 			repaint();
 			try{
-			    t.sleep(1000);
+			    Thread.sleep(1000);
 			}
             catch(InterruptedException e){
 			}
