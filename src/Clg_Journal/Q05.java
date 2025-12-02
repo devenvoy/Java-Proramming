@@ -1,10 +1,10 @@
 package Clg_Journal;
 
-interface Area {
+interface Shape {
     void area();
 }
 
-class rectangle implements Area {
+class rectangle implements Shape {
 
     int height, width;
 
@@ -20,7 +20,7 @@ class rectangle implements Area {
 }
 
 
-class triangle implements Area {
+class triangle implements Shape {
     int height, base;
 
     triangle(int h, int b) {
@@ -35,7 +35,7 @@ class triangle implements Area {
 }
 
 
-class square implements Area {
+class square implements Shape {
     int side;
 
     square(int h) {
@@ -51,9 +51,9 @@ class square implements Area {
 public class Q05 {
 
     public static void main(String[] args) {
-        triangle t = new triangle(10, 5);
-        rectangle r = new rectangle(10, 30);
-        square s = new square(10);
+        Shape t = new triangle(10, 5);
+        Shape r = new rectangle(10, 30);
+        Shape s = new square(10);
 
         t.area();
         r.area();

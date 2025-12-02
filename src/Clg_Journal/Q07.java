@@ -8,5 +8,8 @@ public class Q07 {
         String str2 = str.replace('e','E');
         System.out.println("New String : "+str2);
         System.out.println("String in Uppercase : "+str.toUpperCase());
+        System.out.println("String in Lowercase : "+str.toLowerCase());
+        System.out.println("String in Capitalized : "+str.charAt(0));
+        System.out.println("String in reverse : "+ new StringBuilder(str).reverse());
     }
 }

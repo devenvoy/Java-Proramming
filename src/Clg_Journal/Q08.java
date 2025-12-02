@@ -5,11 +5,10 @@ import java.util.Scanner;
 
 public class Q08 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int num1;
-        int num2;
 
-        try {
+        try (Scanner sc = new Scanner(System.in)) {
+            int num1;
+            int num2;
             num1 = sc.nextInt();
             num2 = sc.nextInt();
 
@@ -20,9 +19,6 @@ public class Q08 {
             System.out.println("Enter Integer Values Only ");
         } catch (ArithmeticException e) {
             System.out.println("You Can't Divide any number with Zero \n" + e);
-        }
-        finally {
-            sc.close();
         }
     }
 }

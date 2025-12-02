@@ -1,13 +1,13 @@
 package Clg_Journal;
 class student1 {
-    int rollno;
+    int rollNo;
 
-    public void setRollno(int r) {
-        rollno = r;
+    public void setRollNo(int r) {
+        rollNo = r;
     }
 
-    public void putRollno() {
-        System.out.println("Roll no = " + rollno);
+    public void putRollNo() {
+        System.out.println("Roll no = " + rollNo);
     }
 }
 
@@ -25,7 +25,7 @@ class test extends student1 {
 }
 
 interface sports {
-    float sportmark = 6.0f;
+    float sportMark = 6.0f;
 
     void putSport();
 }
@@ -35,12 +35,12 @@ class result extends test implements sports {
 
     @Override
     public void putSport() {
-        System.out.println("Sport Mark = " + sportmark);
+        System.out.println("Sport Mark = " + sportMark);
     }
 
     void display() {
-        total = mark1 + mark2 + sportmark;
-        putRollno();
+        total = mark1 + mark2 + sportMark;
+        putRollNo();
         putMarks();
         putSport();
         System.out.println("Total Marks = " + total);
@@ -50,7 +50,7 @@ class result extends test implements sports {
 public class Q06 {
     public static void main(String[] args) {
         result aa = new result();
-        aa.setRollno(101);
+        aa.setRollNo(101);
         aa.setMarks(30.5f, 35.6f);
         aa.display();
     }
